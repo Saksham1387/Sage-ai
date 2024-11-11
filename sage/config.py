@@ -83,6 +83,7 @@ def add_repo_args(parser: ArgumentParser) -> Callable:
     )
     parser.add(
         "--repo-mode",
+        choices=["local", "remote"],
         default = "remote",
         help="Define where is the repo present"
     )
